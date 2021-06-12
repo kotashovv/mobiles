@@ -1,0 +1,50 @@
+.breaker {
+    padding: 30px 10px;
+    background-image: url(assets/img/back-abstrakt.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 10px;
+    }
+}
+.container {
+}
+.item-breaker {
+    &__number {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+@media (max-width:768px) {
+    .breaker {
+        background-position: top;
+        background-size: cover;
+        &__items {
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 10px;
+        }
+    }
+    .item-breaker {
+        &__number {
+            font-size: 24px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+}

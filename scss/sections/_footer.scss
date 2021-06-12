@@ -1,0 +1,15 @@
+.footer {
+    padding: 20px 10px;
+    &_text {
+        p {
+            text-align: center;
+            span {
+                color: #5d12f8;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__body {
+    }
+}

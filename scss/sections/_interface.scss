@@ -1,0 +1,14 @@
+.menu__burger.is-active {
+    span {
+        opacity: 0;
+    }
+    &::before {
+        transform: rotate(45deg);
+        top: 15px;
+    }
+    &::after {
+        transform: rotate(-45deg);
+        width: 100%;
+        bottom: 17px;
+    }
+}

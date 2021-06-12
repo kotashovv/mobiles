@@ -1,0 +1,113 @@
+.contacts {
+    padding: 30px 0 50px;
+    overflow-x: hidden;
+    &__body {
+        padding: 50px 10px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__form {
+        flex-basis: 48%;
+        margin-right: 100px;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input {
+                padding: 20px 10px;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: none;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: rgb(39, 39, 39);
+                color: #fff;
+                &:focus {
+                    outline: none;
+                }
+            }
+            textarea {
+                resize: none;
+                width: 100%;
+                padding: 20px 10px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                height: 100px;
+                border: none;
+                font-size: 18px;
+                color: #fff;
+                background-color: rgb(39, 39, 39);
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                padding: 20px 30px;
+                border-radius: 5px;
+                background-color: #5d12f8;
+                color: #fff;
+                border: none;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.main-form {
+}
+
+.contacts-socials {
+
+    &__row {
+        font-size: 24px;
+        margin-bottom: 20px;
+        a {
+            color: #666;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contacts {
+        padding: 20px 0 20px;
+        &__body {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__form {
+            flex-basis: inherit;
+            margin-right: 0;
+            width: 75%;
+            margin-bottom: 30px;
+        }
+        &__socials {
+            width: 100%;
+            margin-left: 25%;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .contacts {
+        &__form {
+            width: 100%;
+            form {
+                align-items: center;
+            }
+        }
+        &__socials {
+            margin-left: 0;
+        }
+    }
+}

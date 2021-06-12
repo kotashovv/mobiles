@@ -1,0 +1,26 @@
+// Основной шрифт на сайте с предзагрузкой
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"),
+         local("Roboto-Regular"),
+         url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) 
+         format("woff2");
+}
+
+// Дополнительный шрифт 
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"),
+         local("Roboto-Regular"),
+         url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) 
+         format("woff2");
+}
+

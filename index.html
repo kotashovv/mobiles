@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#51adf6"> <!-- Цвет окна браузера для андройд -->
+    <meta name="google" content="notranslate"> <!-- Просьба не переводить страницу на другие языки -->
+    <meta name="geo.placename" content="Moscow"> <!-- Локация компании -->
+    <!-- Информация для социальных сетей -->
+    <meta property="og:url" content="https://site.com/"> <!-- URL данной страницы -->
+    <meta property="og:type" content="website"> <!-- Тип контента (для страниц используйте тип website) -->
+    <meta property="og:title" content="Заголовок страницы">
+    <meta property="og:description" content="Краткое описание контента на странице">
+    <meta property="og:image" content="https://site.com/images/image.jpg"> <!-- Превью -->
+    <meta property="og:image:alt" content="Описание того, что изображено на превью">
+    <meta property="og:site_name" content="Название сайта">
+    <meta property="og:locale" content="ru_RU"> <!-- Язык контента на странице -->
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="preloader" style="   
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 999;
+    opacity: 0.9;">
+        <div class="cssload-dots">
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+        </div>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                    <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <div class="wrapper">
+        <!-- start header -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <div class="header__logo">
+                            <a class="link" data-goto=".welcome" href="#">ForWork Digital</a>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li><a class="link" data-goto=".welcome" href="#">Главная</a></li>
+                                <li><a class="link" data-goto=".about" href="#">О Компании</a></li>
+                                <li><a class="link" data-goto=".features" href="#">Преимущества</a></li>
+                                <li><a class="link" data-goto=".vista" href="#">Возможности</a></li>
+                                <li><a class="link" data-goto=".contacts" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <button class="menu__burger">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="header__mobile-menu">
+                        <ul>
+                            <li><a class="link" data-goto=".welcome" href="#">Главная</a></li>
+                            <li><a class="link" data-goto=".about" href="#">О Компании</a></li>
+                            <li><a class="link" data-goto=".features" href="#">Преимущества</a></li>
+                            <li><a class="link" data-goto=".vista" href="#">Возможности</a></li>
+                            <li><a class="link" data-goto=".contacts" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal">
+
+                    </div>
+                </div>
+            </header>
+            
+        <!-- end  header -->
+
+        <!-- start main-content -->
+        <main class="main-content">
+            <section class="welcome">
+                <div class="welcome__body container">
+                    <div class="welcome__image _anim-items _anim-no-hide">
+                        <img src="assets/img/Phone-welcome.png" alt="">
+                    </div>
+                    <div class="welcome__textbox _anim-items _anim-no-hide">
+                        <div class="welcome__title">
+                            <h1>
+                                Разработка мобильного приложения
+                            </h1>
+                        </div>
+                        <div class="welcome__subtitle">
+                            <h2>
+                                Android, IOS от 100 000 ₽
+                            </h2>
+                        </div>
+                        <div class="welcome__button">
+                            <a href="#">Создать</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- start edge -->
+             <section class="edge">
+                 <div class="container">
+                     <div class="edge__body">
+                         <div class="edge__card _anim-items _anim-no-hide">
+                             <div class="edge-card__img">
+                                 <img src="assets/img/Coding_SVG.svg" alt="">
+                             </div>
+                             <div class="edge-card__title">
+                                 <h3>
+                                     Удаленный доступ
+                                 </h3>
+                             </div>
+                             <div class="edge-card__desctiption">
+                                 <p>
+                                    безопасный доступ ко всем корпоративным системам
+                                 </p>
+                             </div>
+                         </div>
+                         <div class="edge__card _anim-items _anim-no-hide">
+                            <div class="edge-card__img">
+                                <img src="assets/img/Investment_SVG.svg" alt="">
+                            </div>
+                            <div class="edge-card__title">
+                                <h3>
+                                    Выгодное предложение
+                                </h3>
+                            </div>
+                            <div class="edge-card__desctiption">
+                                <p>
+                                    Максимальный компромисс между качеством и ценой приложения
+                                </p>
+                            </div>
+                         </div>
+                         <div class="edge__card _anim-items _anim-no-hide">
+                            <div class="edge-card__img">
+                                <img src="assets/img/security_SVG.svg" alt="">
+                            </div>
+                            <div class="edge-card__title">
+                                <h3>
+                                    Безопасность
+                                </h3>
+                            </div>
+                            <div class="edge-card__desctiption">
+                                <p>
+                                    Мобильное приложение с максимальным уровнем безопасности
+                                </p>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+             <section class="about">
+                 <div class="container">
+                     <div class="about__title section-title">
+                         <h4>О компании</h4>
+                     </div>
+                     <div class="about__body">
+                         <div class="about__img _anim-items _anim-no-hide">
+                             <img src="assets/img/phone-mockup.png" alt="">
+                         </div>
+                         <div class="about__text _anim-items _anim-no-hide">
+                             <p>
+                                Наши решения обеспечивают надежный и безопасный доступ к корпоративным ресурсам с мобильных устройств.
+                                <br>
+                                 <br>
+                                 Мы готовы к серьезной проработке бизнес-логики и архитектуры системы, чтобы обеспечить одновременную работу тысяч мобильных клиентов, защититься от DDoS-атак и других уязвимостей.
+                                 <br>
+                                 <br>
+                                 В кратчайшие сроки создаем прототипы мобильных клиентов, эффективно демонстрирующие функциональность разрабатываемых систем.
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+            <!-- end  edge -->
+            <section class="features">
+                <div class="container">
+                    <div class="features__title section-title">
+                        <h4>Преимущества</h4>
+                    </div>
+                    <div class="features__subtitle section-subtitle">
+                        <p>
+                            Создания приложения с нами
+                        </p>
+                    </div>
+                    <div class="features__body">
+                        <div class="features__column _anim-items _anim-no-hide">
+                            <ul class="features-column__list">
+                                <li><img src="assets/img/icons/battery-icn.svg" alt="">
+                                <p>Экономное приложение</p> </li>
+                                <li><img src="assets/img/icons/chain-icn.svg" alt="">
+                                <p>Все операционные системы</p></li>
+                                <li><img src="assets/img/icons/chat-icn.svg" alt="">
+                                <p>Поддержка в чате</p></li>
+                                <li><img src="assets/img/icons/cpu-icn.svg" alt="">
+                                <p>Любое железо</p></li>
+                            </ul>
+                        </div>
+                        <div class="features__column">
+                            <img class="phone-app-img" src="assets/img/phone_features.png" alt="">
+                        </div>
+                        <div class="features__column _anim-items _anim-no-hide">
+                            <ul class="features-column__list ">
+                                <li><img src="assets/img/icons/flash-icn.svg" alt="">
+                                <p>Максимальная скорость</p></li>
+                                <li><img src="assets/img/icons/hat-icn.svg" alt="">
+                                <p>По-настоящему умное</p></li>
+                                <li><img src="assets/img/icons/lamp-icn.svg" alt="">
+                                <p>Воплощение смелых идей</p></li>
+                                <li><img src="assets/img/icons/password-icn.svg" alt="">
+                                <p>Совершенно безопасно</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="breaker">
+                <div class="container">
+                    <div class="breaker__items">
+                        <div class="breaker__item">
+                            <div class="item-breaker__number">
+                                <b>100+</b>
+                            </div>
+                            <div class="item-breaker__text">
+                                Довольных клиентов
+                            </div>
+                        </div>
+                        <div class="breaker__item">
+                            <div class="item-breaker__number">
+                                <b>75+</b>
+                            </div>
+                            <div class="item-breaker__text">
+                                Завершенных проектов
+                            </div>
+                        </div>
+                        <div class="breaker__item">
+                            <div class="item-breaker__number">
+                                <b>1000</b>
+                            </div>
+                            <div class="item-breaker__text">
+                                Чашек кофе
+                            </div>
+                        </div>
+                        <div class="breaker__item">
+                            <div class="item-breaker__number">
+                                <b>10000</b> 
+                            </div>
+                            <div class="item-breaker__text">
+                                Часов активной работы
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="vista">
+                <div class="container">
+                    <div class="section-title">
+                        <h4>
+                            Возможности
+                        </h4>
+                    </div>
+                    <div class="vista__body">
+                        <div class="vista__image _anim-items _anim-no-hide">
+                            <img src="assets/img/Снимок-removebg-preview.png" alt="">
+                        </div>
+                        <div class="vista__textbox _anim-items _anim-no-hide">
+                            <ul class="vista__list">
+                                <li class="vista__item"><h5>ИНТЕРНЕТ МАГАЗИНЫ</h5>
+                                <p>У нас предусмотрен готовый функционал для быстрого запуска интернет магазина в мобильном приложении. Множество платёжных систем на выбор. Импорт/экспорт товаров и Push уведомления.</p></li>
+                                <li class="vista__item"><h5>БИЗНЕС, ОРГАНИЗАЦИИ</h5>
+                                <p>Создать приложение для компании с готовым набором полезных функций. Внутренняя почта с клиентами, поддержка и информация для пользователей</p></li>
+                                <li class="vista__item"><h5>РЕСТОРАНЫ И СЛУЖБЫ ДОСТАВКИ</h5>
+                                <p>Всё для запуска мобильного приложения. Полный функционал для сети ресторанного бизнеса, навигация для службы доставки еды, удобное меню для пользователей</p></li>
+                                <li class="vista__item"><h5>ИНФОБИЗНЕС И КОУЧИНГ</h5>
+                                <p>Продаёте курсы своим пользователям? Нет проблем - создайте страницы с тренингами и сделайте платный доступ с подписками и сроками.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__title section-title">
+                        <h4>Контакты</h4>
+                    </div>
+                    <div class="contacts__subtitle section-subtitle">
+                        <p>Наш менеджер свяжется с вами в ближайшее время</p>
+                    </div>
+                    <div class="contacts__body">
+                        <div class="contacts__form">
+                            <form action="#" class="main-form">
+                                <input type="text" name="form_name" id="" placeholder="Введите ваше имя">
+                                <input type="text" name="form_email" id="" placeholder="Ваш Email">
+                                <input type="tel" name="form_phone" id="" placeholder="Телефон">
+                                <textarea name="form_text" id="" placeholder="Ваше сообщение"></textarea>
+                                <button type="submit">Оставить заявку</button>
+                            </form>
+                        </div>
+                        <div class="contacts__socials">
+                            <div class="contacts-socials__row">Москва</div>
+                            <div class="contacts-socials__row"><a href="tel:+79999999999">+7 999-999-99-99</a></div>
+                            <div class="contacts-socials__row"><a href="mailto:example@gmail.com">Example@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- end  main-content -->
+
+        <!-- start footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="footer_text">
+                            <p>Copyright ©2021 All rights reserved | <span>ForWork Digital</span></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- end  footer -->
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

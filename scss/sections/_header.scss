@@ -1,0 +1,141 @@
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgb(21, 21, 21) 10%, rgb(26, 26, 26) 50%);
+    color: #fff;
+    z-index: 100;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        transition: padding .15s ease;
+        &.scroll {
+            padding: 10px ;
+        }
+    }
+
+    &__logo {
+        a {
+            color: #fff;
+            font-size: 24px; 
+        }
+    }
+
+    &__menu {
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        li {
+            padding-left: 20px;
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+    }
+    &__mobile-menu {
+        position: fixed;
+        background-color: #111;
+        height: 100vh;
+        width: 250px;
+        text-align: right;
+        z-index: 10;
+        right: -100%;
+        transition: right 200ms ease;
+        ul {
+            list-style: none;
+            li {
+                padding-right: 20px;
+                padding-bottom: 20px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 18px;
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                    
+                }
+            }
+        }
+        &.is-active {
+            right: 0;
+        }
+    }
+}
+.menu {
+
+    &__burger {
+        display: none;
+    }
+}
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+@media (max-width:768px) {
+    .header {
+        &__list {
+            display: none;
+        }
+    }
+
+    .menu { 
+        &__burger {
+            display: block;
+            border: none;
+            background-color: transparent;
+            width: 70px;
+            height: 35px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                top: 0;
+                right: 0;
+                transition: all 150ms ease;
+            }
+            span {
+                position: absolute;
+                width: 77%;
+                height: 2px;
+                background-color: #fff;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                transition: all 150ms ease;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                background-color: #fff;
+                bottom: 0;
+                right: 0;
+                transition: all 150ms ease;
+            }
+        }
+    }
+}
+
